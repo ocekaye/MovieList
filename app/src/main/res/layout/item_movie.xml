@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_marginRight="4sp"
+    android:layout_marginLeft="4sp"
+    android:layout_marginEnd="8sp"
+    android:layout_marginStart="8sp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <id.setyatmoko.movielist.Customs.PosterImageView
+            android:id="@+id/imgCover"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@color/grey_300" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/imgCover"
+            android:layout_alignRight="@+id/imgCover" >
+            <ImageView
+                android:id="@+id/imgStart"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/start"
+                android:tint="@color/yellow_400"
+                android:layout_toRightOf="@+id/txtRating"
+                android:layout_toEndOf="@+id/txtRating"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:id="@+id/txtRating"
+                android:text="0.1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:shadowColor="@color/black"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="30"
+                tools:ignore="HardcodedText"/>
+        </RelativeLayout>
+
+        <TextView
+            android:background="@drawable/doscover_title_drop"
+            android:textColor="@color/grey_300"
+            android:id="@+id/txtTitle"
+            android:textSize="14sp"
+            android:gravity="start"
+            android:paddingTop="14dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_alignBottom="@+id/imgCover"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
